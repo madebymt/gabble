@@ -16,18 +16,35 @@ h1 {
     padding:30px;
 }
 
+label {
+    color:brown;
+    font-family: sans-serif;
+}
+
+input[type="text"] {
+    padding:5px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+textarea {
+    padding:5px;
+    border-radius: 10px;
+}
+
 button {
     background-color: black;
     color:white;
     padding:10px;
     margin:10px;
-    border-radius: 10px;
 }
 
-.showPost {
+form {
     width:500px;
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid lightgrey;
-    border-radius: 20px;
+    margin:0 auto;
+}
+
+h3 {
+    color:grey;
+    text-align: center;
 }

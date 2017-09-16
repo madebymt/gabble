@@ -14,23 +14,31 @@
             <a href="/register"> Register</a>
             <a href="/logout"> Log out</a>
         </nav>
-        <h1> Gabble</h1>
-        <h3> Post your gabble here</h3>
+        <h1> Edit</h1>
+        <h3> Edit your gabble here</h3>
 
     </header>
     <body>
+
+        {{#post}}
 <div class="">
-    <form class="post" action="/post" method="post">
+    <form class="post" action="/edit/:id" method="post">
         <label for=""> Title </label>
-        <input type="text" name="post" value="">
+        <input type="text" name="post" value={{post}}>
         <br>
         <label for=""> Message</label>
         <br>
-        <textarea name="title" rows="8" cols="80"></textarea>
+        <textarea name="title" rows="8" cols="80" value = {{title}}></textarea>
         <br>
-        <button type="submit" name="button"> Send your post</button>
+        <button type="submit" name="button"> Finish Edit</button>
+    </form>
+
+
+        <form class="delete" action="/delete" method="post">
+            <button type="submit" name="button">Delete</button>
     </form>
 </div>
+{{/post}}
 
     </body>
 </html>

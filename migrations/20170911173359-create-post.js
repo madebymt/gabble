@@ -8,10 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      post: {
+     post: {
         type: Sequelize.STRING
       },
-      password: {
+     title: {
         type: Sequelize.STRING
       },
       create_at: {

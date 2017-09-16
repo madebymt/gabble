@@ -10,20 +10,33 @@
         <div class="nav">
         <nav>
             <a href="/">Home</a>
-            <a href="/post"> Post</a>
             <a href="/login">Log in</a>
+            <a href="/register"> Register</a>
+            <a href="/post"> Post</a>
             <a href="/logout"> Log out</a>
         </nav>
         </div>
         <h1> Gabble</h1>
-        <h3> </h3>
 
     </header>
     <body>
-<div class="">
 
 
-</div>
+        <div class="showPost">
+            {{#post}}
+            <a href="/post/{{id}}">{{post}}</a>
+            <h3>{{title}}</h3>
+            <p>{{createdAt}}</p>
+            <p>{{username}}</p>
+
+            <form class="" action="/like" method="post">
+                <button type="submit" name="button">Like!</button>
+            </form>
+
+            {{/post}}
+
+        </div>
+
 
     </body>
 </html>

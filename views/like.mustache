@@ -6,7 +6,27 @@
         <link rel="stylesheet" href="/css/like.css">
 
     </head>
+
+    <header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/post"> Post</a>
+        <a href="/login">Log in</a>
+        <a href="/register"> Register</a>
+        <a href="/logout"> Log out</a>
+    </nav>
+    </header>
     <body>
+        <div class="">
+
+        <h2> Liki liki</h2>
+        {{#like}}
+        {{userId}}
+        {{postId}}
+
+        {{/like}}
+
+        </div>
 
     </body>
 </html>
